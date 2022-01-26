@@ -15,7 +15,7 @@
  */
 
 #define ATRACE_TAG (ATRACE_TAG_POWER | ATRACE_TAG_HAL)
-#define LOG_TAG "android.hardware.power-service.pixel-libperfmgr"
+#define LOG_TAG "android.hardware.power-service.vince-libperfmgr"
 
 #include "Power.h"
 
@@ -37,7 +37,7 @@ namespace google {
 namespace hardware {
 namespace power {
 namespace impl {
-namespace pixel {
+namespace vince {
 
 constexpr char kPowerHalStateProp[] = "vendor.powerhal.state";
 constexpr char kPowerHalAudioProp[] = "vendor.powerhal.audio";
@@ -248,7 +248,7 @@ binder_status_t Power::dump(int fd, const char **, uint32_t) {
     return STATUS_OK;
 }
 
-}  // namespace pixel
+}  // namespace vince
 }  // namespace impl
 }  // namespace power
 }  // namespace hardware
